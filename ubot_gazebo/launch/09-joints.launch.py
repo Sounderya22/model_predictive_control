@@ -42,18 +42,18 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     package_arg = DeclareLaunchArgument('urdf_package',
                                         description='The package where the robot description is located',
-                                        default_value='urdf_sim_tutorial')
+                                        default_value='ubot_description')
     model_arg = DeclareLaunchArgument('urdf_package_path',
                                       description='The path to the robot description relative to the package root',
-                                      default_value='urdf/09-publishjoints.urdf.xacro')
+                                      default_value='urdf/ubot_burger_gazebo.urdf')
 
     rvizconfig_arg = DeclareLaunchArgument(
         name='rvizconfig',
-        default_value=PathJoinSubstitution([FindPackageShare('urdf_tutorial'), 'rviz', 'urdf.rviz']),
+        default_value=PathJoinSubstitution([FindPackageShare('ubot_gazebo'), 'rviz', 'odom_urdf.rviz']),
     )
 
     gazebo_launch = IncludeLaunchDescription(
-        PathJoinSubstitution([FindPackageShare('urdf_sim_tutorial'), 'launch', 'gazebo.launch.py']),
+        PathJoinSubstitution([FindPackageShare('ubot_gazebo'), 'launch', 'gazebo.launch.py']),
         launch_arguments={
             'urdf_package': LaunchConfiguration('urdf_package'),
             'urdf_package_path': LaunchConfiguration('urdf_package_path')

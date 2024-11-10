@@ -46,10 +46,10 @@ def generate_launch_description():
     )
     package_arg = DeclareLaunchArgument('urdf_package',
                                         description='The package where the robot description is located',
-                                        default_value='urdf_tutorial')
+                                        default_value='ubot_description')
     model_arg = DeclareLaunchArgument('urdf_package_path',
                                       description='The path to the robot description relative to the package root',
-                                      default_value='urdf/08-macroed.urdf.xacro')
+                                      default_value='urdf/ubot_burger_gazebo.urdf')
 
     empty_world_launch = IncludeLaunchDescription(
         PathJoinSubstitution([FindPackageShare('gazebo_ros'), 'launch', 'gazebo.launch.py']),
