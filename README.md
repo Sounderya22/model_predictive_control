@@ -14,7 +14,7 @@ Then, you are ready to clone and build this repository.
 You should only have to do this once per install.
 
 ```sh
-mkdir -p create3_examples_ws/src
+mkdir -p dev_ws/src
 cd dev_ws/src
 git clone https://github.com/Sounderya22/robot_description_project_control_enpm667_1.git --branch main
 cd ..
