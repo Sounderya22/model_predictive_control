@@ -1,6 +1,7 @@
 from setuptools import find_packages, setup
 import os
 from glob import glob
+
 package_name = 'my_robot'
 
 setup(
@@ -30,16 +31,17 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='khuzema',
-    maintainer_email='khabib@umd.edu',
+    maintainer='katos',
+    maintainer_email='katos@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'teleop = my_robot.scripts.teleop:main',
-            'pd_control = my_robot.scripts.pd_control:main',
-            'mpc_control = my_robot.scripts.mpc_control:main'
+            'teleop = my_robot.teleop:main',
+            'collision_avoidance = my_robot.collision_avoidance:main',
+            'mpc_control = my_robot.mpc_control:main',
+            'pd_control = my_robot.pd_control:main',
         ],
     },
 )

@@ -49,7 +49,7 @@ class MPCNavigatorNode(Node):
 
         self.Q = np.diag([2.0, 2.0, 5.0])  # State cost matrix
 
-        self.R = np.diag([0.01, 0.7])  # Control cost matrix
+        self.R = np.diag([0.01, 1])  # Control cost matrix
 
         # Constraints
 
@@ -263,7 +263,7 @@ class MPCNavigatorNode(Node):
 
             # Stop if the robot is within 0.54 meters of the marker
 
-            if marker_depth <= 1.4:
+            if marker_depth <= 0.7:
                 twist.linear.x = 0.0
 
                 twist.angular.z = 0.0
