@@ -4,8 +4,8 @@
   <name>my_robot</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="khabib@umd.edu">khuzema</maintainer>
-  <license>Apache 2.0</license>
+  <maintainer email="katos@todo.todo">katos</maintainer>
+  <license>TODO: License declaration</license>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
