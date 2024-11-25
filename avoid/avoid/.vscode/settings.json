@@ -1,0 +1,32 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/khuzema/ros2_ws/install/my_robot/lib/python3.10/site-packages",
+        "/home/khuzema/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/khuzema/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/khuzema/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/khuzema/install/tb_control/lib/python3.10/site-packages",
+        "/home/khuzema/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/khuzema/testWS/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/khuzema/testWS/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/khuzema/testWS/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/khuzema/testWS/install/tb_control/lib/python3.10/site-packages",
+        "/home/khuzema/testWS/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/khuzema/ros2_ws/install/my_robot/lib/python3.10/site-packages",
+        "/home/khuzema/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/khuzema/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/khuzema/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/khuzema/install/tb_control/lib/python3.10/site-packages",
+        "/home/khuzema/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/khuzema/testWS/install/turtlebot3_teleop/lib/python3.10/site-packages",
+        "/home/khuzema/testWS/install/turtlebot3_example/lib/python3.10/site-packages",
+        "/home/khuzema/testWS/install/turtlebot3_msgs/local/lib/python3.10/dist-packages",
+        "/home/khuzema/testWS/install/tb_control/lib/python3.10/site-packages",
+        "/home/khuzema/testWS/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
