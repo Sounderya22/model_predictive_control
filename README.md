@@ -16,7 +16,7 @@ You should only have to do this once per install.
 ```sh
 mkdir -p dev_ws/src
 cd dev_ws/src
-git clone https://github.com/Sounderya22/robot_description_project_control_enpm667_1.git --branch main
+git clone https://github.com/Sounderya22/robot_description_project_control_enpm667_1.git --branch development_final
 cd ..
 rosdep install --from-path src --ignore-src -yi
 colcon build
