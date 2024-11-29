@@ -7,6 +7,16 @@ Contains the robot description and controllers for simulation in ROS2 and Gazebo
 Make sure that ROS 2 Humble or Higher is already installed in your system.
 You can follow the [official instructions](https://docs.ros.org/en/jazzy/Installation.html).
 
+Install the following Dependencies to run the code
+```sh
+pip install opencv-python numpy cvxpy matplotlib osqp
+```
+For ROS2 CV Bridge:
+```sh
+sudo apt install ros-<ros2-distro>-cv-bridge
+```
+
+
 ### Build instructions
 
 First, source your ROS 2 workspaces with all the required dependencies.
@@ -16,7 +26,7 @@ You should only have to do this once per install.
 ```sh
 mkdir -p dev_ws/src
 cd dev_ws/src
-git clone https://github.com/Sounderya22/robot_description_project_control_enpm667_1.git --branch main
+git clone https://github.com/Sounderya22/robot_description_project_control_enpm667_1.git --branch development_final
 cd ..
 rosdep install --from-path src --ignore-src -yi
 colcon build
@@ -32,7 +42,24 @@ source ~/dev_ws/install/local_setup.sh
 
 ### Run the examples
 
-Refer to the individual examples README.md for instructions on how to run them.
+After Building and Sourcing the Workspace, Launch the TurtleBot using:
+
+```sh
+ros2 launch turtlebot3_gazebo custom_world.launch.py
+```
+Open a Separate Terminal Window to run the controllers.
+
+Run the PD Controller:
+
+```sh
+ros2 run my_robot pd_control.py
+```
+Run the MPC Contoller:
+
+```sh
+ros2 run my_robot mpc_control.py
+```
+
 
 ### Potential pitfalls
 
