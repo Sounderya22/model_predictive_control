@@ -26,7 +26,7 @@ You should only have to do this once per install.
 ```sh
 mkdir -p dev_ws/src
 cd dev_ws/src
-git clone https://github.com/Sounderya22/model_predictive_control.git --branch development_final
+git clone https://github.com/Sounderya22/model_predictive_control.git
 cd ..
 rosdep install --from-path src --ignore-src -yi
 colcon build
