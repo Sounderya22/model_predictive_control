@@ -1,4 +1,4 @@
-Certainly. I'll compile all the key dynamics and kinematics equations from the paper for your report. Here are the main equations:
+
 
 1. Kinematics Model (Cartesian coordinates):
 
